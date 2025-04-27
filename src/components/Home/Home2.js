@@ -24,7 +24,7 @@ function Home2() {
               <br />
               <br />I am fluent in classics like
               <i>
-                <b className="purple"> C++, Javascript and Go. </b>
+                <b className="purple"> Java, Javascript, Python, Rust and Move. </b>
               </i>
               <br />
               <br />
@@ -37,19 +37,19 @@ function Home2() {
                 </b>
               </i>
               <br />
-              <br />
+              {/* <br />
               Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
+              with <b className="purple">Node.js</b> and */}
+              {/* <i>
                 <b className="purple">
                   {" "}
                   Modern Javascript Library and Frameworks
                 </b>
-              </i>
-              &nbsp; like
+              </i> */}
+              {/* &nbsp; like
               <i>
                 <b className="purple"> React.js and Next.js</b>
-              </i>
+              </i> */}
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -85,7 +85,7 @@ function Home2() {
                   <AiOutlineTwitter />
                 </a>
               </li>
-              <li className="social-icons">
+              {/* <li className="social-icons">
                 <a
                   href="https://www.linkedin.com/in/soumyajit4419/"
                   target="_blank"
@@ -94,7 +94,7 @@ function Home2() {
                 >
                   <FaLinkedinIn />
                 </a>
-              </li>
+              </li> */}
               <li className="social-icons">
                 <a
                   href="https://www.instagram.com/soumyajit4419"
