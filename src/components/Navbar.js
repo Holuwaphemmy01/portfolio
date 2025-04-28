@@ -145,10 +145,9 @@ function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
-  // State for the animated "Oluwafemi" text
   const [displayedText, setDisplayedText] = useState("");
-  const fullText = "Oluwafemi"; // The full text to animate
-  const intervalTime = 500; // Time (in ms) between each letter appearing
+  const fullText = "Oluwafemi"; 
+  const intervalTime = 500; 
 
   useEffect(() => {
     let index = 0;
@@ -157,13 +156,11 @@ function NavBar() {
         setDisplayedText((prevText) => prevText + fullText[index]);
         index++;
       } else {
-        // Reset the animation when all letters are displayed
         setDisplayedText("");
         index = 0;
       }
     }, intervalTime);
 
-    // Cleanup the interval on component unmount
     return () => clearInterval(intervalId);
   }, []);
 
