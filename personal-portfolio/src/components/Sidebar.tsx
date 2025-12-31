@@ -28,7 +28,19 @@ export const Sidebar = () => {
             py-6 pl-10'
             bg-neutral-900
         >
+            <SheetTitle className='text-lg
+            font-semibold'>Menu</SheetTitle>
 
+            <nav className='flex flex-col gap-4'>
+                {navLinks.map((link) => {
+                    const Icon = link.icon;
+                    return (
+                        <a href={link.link}>
+                            <Icon /> {link.label}
+                        </a>
+                    );
+                })}
+            </nav>
         </SheetContent>
       </Sheet>
     </>
