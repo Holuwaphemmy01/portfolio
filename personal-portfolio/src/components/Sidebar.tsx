@@ -5,6 +5,7 @@ import  {Sheet, SheetContent, SheetTitle,
 import { Button } from '@/components/ui/button';
 import { MenuIcon } from 'lucide-react';
 import { navLinks, socialLinks } from '@/constants';
+import { cn } from '@/lib/utils';
 
 
 export const Sidebar = () => {
@@ -35,7 +36,17 @@ export const Sidebar = () => {
                 {navLinks.map((link) => {
                     const Icon = link.icon;
                     return (
-                        <a href={link.link}>
+                        <a 
+                            key={link.label}
+                            href={link.link}
+                            onClick={() => setActive(link.link)}
+                            className={cn(
+                                'text-neutral-300 flex items-center gap-2 hover:text-primary transition-colors duration-200 text-base',
+                                active === link.link && 
+                                'text-primary font-medium'
+                            )}
+                        > 
+                        
                             <Icon /> {link.label}
                         </a>
                     );
