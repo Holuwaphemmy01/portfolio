@@ -47,11 +47,33 @@ export const Sidebar = () => {
                             )}
                         > 
                         
-                            <Icon /> {link.label}
+                            <Icon className="size-4"/> {link.label}
                         </a>
                     );
                 })}
             </nav>
+
+            <div className="mt-30">
+                <p className="pb-2">Socials</p>
+                <div className="flex gap-3 
+                text-neutral-500">
+                    {socialLinks.map((social, index) => {
+                        const Icon = social.icon;
+                        return (
+                            <a 
+                                key={index} 
+                                href={social.link}
+                                className="hover:text-primary
+                                border-2 border-neutral-500 p-2
+                                rounded-full hover:border-primary
+                                transition duration-200"
+                            >
+                                    <Icon className="size-4"/>
+                            </a>
+                        )
+                    })}
+                </div>
+            </div>
         </SheetContent>
       </Sheet>
     </>
