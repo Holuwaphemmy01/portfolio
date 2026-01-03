@@ -1,7 +1,8 @@
 // personal-portfolio/src/App.tsx
 import { Button } from './components/ui/button'
 import {  useEffect } from 'react';
-import { Hero } from './components/Hero';
+import { Hero } from '@/components/Hero';
+import { Stats } from '@/components/Stats';
 
 
 export const App = () => {
@@ -11,7 +12,7 @@ export const App = () => {
         lg:max-w-6xl'
     >
       <Hero/>
-      <></>
+      <Stats />
     </main>
     
   )
