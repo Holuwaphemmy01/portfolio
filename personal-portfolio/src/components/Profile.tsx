@@ -38,13 +38,22 @@ import { socialLinks } from '@/constants';
                     <a 
                         key={index}
                         href={social.link} 
-                        className='hover:text-primary'
+                        className='hover:text-primary
+                        border-2 border-neutral-500
+                        p-2 rounded-full hover:border-primary
+                        transition duration-200'
                     >
                         <Icon className="size-6"></Icon>
                     </a>
                 );
             })}
         </div>
+        <Button 
+            className='mt-2' 
+            size={'lg'}
+        >
+            Contact Me
+        </Button>
     </div>
    </aside>
   )
