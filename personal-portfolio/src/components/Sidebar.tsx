@@ -70,7 +70,7 @@ export const Sidebar = () => {
                             >
                                     <Icon className="size-4"/>
                             </a>
-                        )
+                        );
                     })}
                 </div>
             </div>
