@@ -11,6 +11,7 @@ export const App = () => {
         lg:max-w-6xl'
     >
       <Hero/>
+      <></>
     </main>
     
   )
