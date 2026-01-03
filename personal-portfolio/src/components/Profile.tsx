@@ -7,11 +7,13 @@ import { socialLinks } from '@/constants';
   return (
    <aside className='max-w-3xl border m-6 
       border-neutral-600 bg-neutral-900
-      text-white p-6 rounded-lg lg:sticky'>
-    <div className="">
-        <div className="">
-            <h1 className="">Oluwafemi</h1>
-            <p className="">Software Engineer</p>
+      text-white p-6 rounded-lg lg:sticky
+      lg:left-0 lg:top-6 lg:w-96'>
+    <div className="flex flex-col gap-4">
+        <div className="flex items-center 
+            justify-between gap-x-10 ">
+            <h1 className="text-3xl font-bold">Oluwafemi</h1>
+            <p className="text-sm">Software Engineer</p>
         </div>
         <img 
             src="/avatar.jpg" 
@@ -19,10 +21,29 @@ import { socialLinks } from '@/constants';
             className='lg:w-96 rounded-2xl object-cover' 
         />
 
-        <div className=''>
-            <p className="">Specialization: </p>
-            <p className="">Full stack Developer</p>
+        <div className='mt-6'>
+            <p className="text-sm text-neutral-300">Specialization: </p>
+            <p className="text-lg capitalize">Full stack Developer</p>
+        </div>
 
+         <div className='mt-6'>
+            <p className="text-sm text-neutral-300">Based in: </p>
+            <p className="text-lg capitalize">Based in Lagos, Nigeria</p>
+        </div>
+
+        <div className="flex gap-3 pt-2 text-neutral-500">
+            {socialLinks.map((social, index) => {
+                const Icon = social.icon;
+                return (
+                    <a 
+                        key={index}
+                        href={social.link} 
+                        className='hover:text-primary'
+                    >
+                        <Icon className="size-6"></Icon>
+                    </a>
+                );
+            })}
         </div>
     </div>
    </aside>
