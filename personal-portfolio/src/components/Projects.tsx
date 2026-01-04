@@ -11,12 +11,12 @@ import { ProjectCard } from '@/components/ProjectCard';
 export const Projects = () => {
   return (
    <motion.section
-    initial="hidden"
-    whileInView='visible'
-    viewport={{ once: true, amount: 0.3}}
-    variants={staggerContainer(0)}
-    className='mt-30 scroll-mt-10'
-    id='projects'
+        initial="hidden"
+        whileInView='visible'
+        viewport={{ once: true, amount: 0.3}}
+        variants={staggerContainer(0)}
+        className='mt-30 scroll-mt-10'
+        id='projects'
    >
         <SectionHeader 
             subtitle="Projects" 
