@@ -4,6 +4,7 @@ import {  staggerContainer } from '@/lib/animation';
 
 import {projectsData} from '@/constants';
 import { Section } from 'lucide-react';
+import { SectionHeader } from '@/components/SectionHeader';
 
 
 export const Projects = () => {
@@ -16,7 +17,10 @@ export const Projects = () => {
     className='mt-30 scroll-mt-10'
     id='projects'
    >
-        <Section/>
+        <SectionHeader 
+            subtitle="Projects" 
+            title="My featured projects"
+        />
    </motion.section>
   )
 }
